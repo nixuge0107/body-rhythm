@@ -1,0 +1,20 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+    <view class="title">
+        <text>人体三节律</text>
+    </view>
+    <view class="draw_css">
+        <canvas class="canvas_css" canvas-id="draw_canvas" />
+    </view>
+    <view class="choice_button">
+        <button size="mini" plain="{{true}}">上一页</button>
+        <button size="mini" plain="{{true}}">下一页</button>
+    </view>
+    <view class="section">
+        <view class="section__title">请输入出生日期</view>
+        <picker mode="date" value="{{birthday}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="picker">当前选择: {{birthday}}</view>
+        </picker>
+    </view>
+
+</view>
