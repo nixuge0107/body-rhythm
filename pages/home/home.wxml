@@ -1,20 +1,26 @@
-<!--pages/home/home.wxml-->
+<!-- pages/home/home.wxml -->
 <view class="container">
     <view class="title">
         <text>人体三节律</text>
+        <view class="label">
+            <text style="color:#0000ff">--智力节律</text>
+            <text style="color:#ff0000">--情绪节律</text>
+            <text style="color:#00ff00">--体力节律</text>
+        </view>
     </view>
     <view class="draw_css">
         <canvas class="canvas_css" canvas-id="draw_canvas" />
     </view>
-    <view class="choice_button">
-        <button size="mini" plain="{{true}}">上一页</button>
-        <button size="mini" plain="{{true}}">下一页</button>
+    <view class="section">
+        <view class="section__title">请输入查询日期</view>
+        <picker mode="date" value="{{thisday}}" start="1990-09-01" end="2025-09-01" bindchange="bindThisDateChange">
+            <view class="picker">当前选择: {{thisday}}</view>
+        </picker>
     </view>
     <view class="section">
         <view class="section__title">请输入出生日期</view>
-        <picker mode="date" value="{{birthday}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+        <picker mode="date" value="{{birthday}}" start="1990-09-01" end="2025-09-01" bindchange="bindBirthdayChange">
             <view class="picker">当前选择: {{birthday}}</view>
         </picker>
     </view>
-
 </view>

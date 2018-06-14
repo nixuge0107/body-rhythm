@@ -16,13 +16,10 @@ const formatData = date => {
 
   return [year, month, day].map(formatNumber).join('-')
 }
-//将时间转化为毫秒级
-const DataToMin = data => {
-  return data.getTime()
-}
 
 //计算两个时间的天数差
 const getDiffDay = (data1, data2) => {
+  console.log("data1", data1, "data2", data2)
   var diff = Math.abs(data1.getTime() - data2.getTime())
   return diff / 86400000
 }
@@ -36,6 +33,6 @@ const formatNumber = n => {
 module.exports = {
   formatTime: formatTime,
   formatData: formatData,
-  DataToMin: DataToMin,
-  getDiffDay: getDiffDay
+  getDiffDay: getDiffDay,
+  formatNumber: formatNumber
 }

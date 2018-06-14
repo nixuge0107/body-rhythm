@@ -9,7 +9,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.94",
-	"appid": "touristappid",
+	"appid": "wx8b0274596267eb6a",
 	"projectname": "%E4%BA%BA%E4%BD%93%E4%B8%89%E8%8A%82%E5%BE%8B",
 	"condition": {
 		"search": {
@@ -17,6 +17,10 @@
 			"list": []
 		},
 		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
 			"current": -1,
 			"list": []
 		},

@@ -2,6 +2,13 @@
 /* .draw_css{
     background-color: #ff00;
 } */
+.title{
+    font-size: 20px;
+    text-align: center;
+}
+.label{
+    font-size: 10px;
+}
 .canvas_css{
     width: 750rpx;
     height: 200px;
